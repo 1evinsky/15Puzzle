@@ -1,22 +1,25 @@
 import QtQuick 2.0
 
 Rectangle {
-    id: _root
+    id: root
+
+    property string displayText: ""
+
     color: "lightseagreen"
 
     radius: 20
 
     border{
         color: "black"
-        width: 3
+        width: 2
     }
 
     Text {
         id: _firstText
-        anchors.centerIn: _root
-        text: qsTr("1")
+        anchors.centerIn: root
+        text: root.displayText
         font{
-            pointSize: Math.min(_root.width, _root.height) / 10
+            pointSize: Math.min(root.width, root.height) / 10
             bold: true
         }
     }

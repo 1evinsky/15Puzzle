@@ -8,8 +8,7 @@ Window {
     height: 480
     title: qsTr("Hello World")
 
-    Tile{
-        width: root.width / 2
-        height: root.height / 2
+    GameBoard{
+        anchors.fill: parent
     }
 }
